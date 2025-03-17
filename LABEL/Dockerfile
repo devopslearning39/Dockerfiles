@@ -3,4 +3,4 @@ LABEL course="DevOps" \
       cloud="AWS" \
       duration="2 months"
 
-RUN echo learning technology is ${course} with the ${cloud} and span about ${duration}
+# LABEL is only usefull while filtering the images/containers only.. We cannot able to use LABLE param as variables
