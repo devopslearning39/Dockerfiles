@@ -1,7 +1,6 @@
 FROM almalinux:8
-RUN echo "this is from env instruction"
+RUN yum install nginx -y
 ENV country="bharat" \
     state="tg" \
     dist="nlg"
-
-RUN echo "our nation is ${country}, belonging to ${state} and ${dist}"
+CMD ["nginx","-g","daemon off;"]
