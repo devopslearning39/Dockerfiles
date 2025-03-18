@@ -1,4 +1,4 @@
 FROM almalinux:8
 RUN yum install nginx -y
-ADD https://raw.githubusercontent.com/daws-76s/notes/master/session-01.txt /tmp/
+ADD https://github.com/devopslearning39/Dockerfiles/blob/main/COPY/index.html /tmp/
 CMD ["nginx","-g","daemon off;"]
