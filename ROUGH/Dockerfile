@@ -1,4 +1,4 @@
-FROM vidyakarnakanti/ping-image:v1
+FROM nginx
 
 RUN apt update && \
     apt install -y nginx && \
