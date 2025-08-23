@@ -1,4 +1,5 @@
 FROM almalinux:8
-RUN echo "this instruction is from expose instruction"
-EXPOSE 80/tcp
-CMD ["sleep", "100"]
+RUN yum install nginx -y
+ADD https://github.com/devopslearning39/Dockerfiles/tree/main/jella.txt /tmp
+RUN echo "we are testing ADD instruction"
+CMD ["nginx", "-g", "daemon off;"]
