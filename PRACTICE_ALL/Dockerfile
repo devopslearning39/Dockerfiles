@@ -2,4 +2,4 @@ FROM almalinux8
 RUN yum install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 COPY index.html /usr/share/nginx/html/index.html
-RUN ["nginx", "-g" "daemon off:"]
+RUN ["nginx", "-g", "daemon off:"]
