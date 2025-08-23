@@ -3,4 +3,4 @@ RUN yum install nginx -y
 LABEL course="DevOps" \
       trainer="praveen" \
       duration="120 hrs"
-CMD ["nginx", "-g", "daemon off"]
+CMD ["nginx", "-g", "daemon off;"]
