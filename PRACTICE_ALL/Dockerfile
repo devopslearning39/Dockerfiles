@@ -1,3 +1,3 @@
 FROM almalinux:8
-CMD ["google.co.in"]
-ENTRYPOINT ["ping"]
+CMD ["This is from CMD"]
+ENTRYPOINT ["echo"]
