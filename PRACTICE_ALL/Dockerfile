@@ -1,3 +1,4 @@
-ARG version
-FROM almalinux:${version}
-RUN echo "Hi, this is from ARG instruction ${version}"
+FROM almalinux:8
+RUN yum install nginx -y
+RUN rm -rf /usr/share/nginx/html/index.html
+ONBUILD ADD https://raw.githubusercontent.com/devopslearning39/Dockerfiles/refs/heads/main/index.html /usr/share/nginx/html/index.html
