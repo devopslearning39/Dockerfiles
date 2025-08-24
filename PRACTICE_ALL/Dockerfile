@@ -1,2 +1,4 @@
 FROM almalinux:8
-CMD ["echo","Hi praveen kuma"]
+RUN adduser anil
+WORKDIR anil
+RUN echo "this is from workdir instruction"
